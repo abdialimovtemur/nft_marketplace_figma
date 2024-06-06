@@ -1,0 +1,171 @@
+.hero{
+    width: 100%;
+    display: flex;
+    padding: 180px 130px;
+    justify-content: space-around;
+
+    .hero__title{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        // width: 40%;
+        font-size: 120px;
+
+        .hero__title__info{
+            font-size: 60px;
+            width: 68%;
+        }
+
+        .hero__title__description{
+            font-size: 23px;
+            width: 463px;
+        }
+
+      
+
+        .hero__title__prices{
+            display: flex;
+            gap: 120px;
+            font-size: 23px;
+        }
+
+        .hero__btn{
+            width: 34%;
+            padding: 0px 5px;
+            height: 44px;
+            border: none;
+            border-radius: 10px;
+            background-color: #A259FF;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; &:hover{
+                background-color: crimson;
+            }
+        }
+
+        
+    }
+
+    .hero__post{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        width: 40%;
+        padding-bottom: 10px;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        
+
+        .hero__post__info{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding: 0px 30px;
+
+            .hero__post__name{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+        }
+
+       
+    }
+}
+
+@media (max-width:834px) {
+    .hero .hero__title{
+        gap: 12px;
+    }
+
+    .hero .hero__title .hero__title__info{
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .hero .hero__title .hero__title__description{
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .hero .hero__title .hero__btn{
+        width: 120px;
+
+    }
+
+    .hero .hero__title .hero__title__prices{
+        font-size: 20px;
+        gap: 33px;
+    }
+
+    .hero .hero__post{
+        margin-left: 30px;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media (max-width:375px) {
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero .hero__title{
+        gap: 8px;
+    }
+
+    .hero .hero__title .hero__title__info{
+        font-size: 23px;
+        width: 250px;
+    }
+
+    .hero .hero__title .hero__title__description{
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .hero .hero__title .hero__btn{
+        width: 120px;
+        display: none;
+
+    }
+
+    .hero .hero__title .hero__title__prices{
+        font-size: 20px;
+        gap: 33px;
+        display: none;
+    }
+
+    .hero .hero__post{
+        display: flex;
+        margin-top: 30px;
+        width: 280%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .hero .hero__title__prices{
+        display: flex;
+        gap: 30px;
+        color: white;
+        font-size: 22px;
+    }
+
+    .hero .hero__btn{
+        width: 290%;
+        border-radius: 10px;
+
+    }
+}
+
+

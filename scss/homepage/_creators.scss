@@ -1,0 +1,112 @@
+.creators{
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .creators__discription{
+        display: flex;
+        justify-content: space-between;
+       
+        .creators__title{
+            h1{
+                font-size: 64px;
+            }
+
+            p{
+                font-size: 33px;
+            }
+
+        }
+
+        .creators__btn{
+            width: 180px;
+            height: 50px;
+            color: white;
+            background: none;
+            border: 2px solid #A259FF;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+            margin-top: 67px;
+
+
+            &:hover{
+                color: #A259FF;
+                border-color: aliceblue;
+            }
+        }
+     
+        
+    }
+
+    .creators__cards{
+        width: 100%;
+        padding: 120px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 33px;
+    }
+
+
+    .creators__card , .creators__card__hid{
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #3B3B3B;
+        border-radius: 10px;
+        padding: 38px 0px;
+        position: relative;
+        
+        img{
+            width: 50%;
+        }
+    }
+
+    
+
+    .creators__cards__number{
+        top: 0;
+        left:0;
+        position: absolute;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.188);
+        padding: 10px 15px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width:836px) {
+    .creators .creators__cards .creators__card , .creators__card__hid{
+        height: 80px;
+        width: 46%;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 4px;
+        gap: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        align-items: start;
+            img{
+                width: 30%;
+            }
+        }
+
+        .creators .creators__cards .creators__card__hid{
+            display: none;
+        }
+    }
+
+
+@media (max-width:375px) {
+   
+
+}
